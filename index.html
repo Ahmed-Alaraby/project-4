@@ -10,6 +10,8 @@
   <link rel="stylesheet" href="css/normalise.css">
   <!-- font awesome -->
   <link rel="stylesheet" href="css/all.min.css">
+  <!-- Add Aos Library -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <!-- font google -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,14 +23,14 @@
   <div class="header">
     <div class="container">
       <div class="logo">
-        <img src="photos/purger.png" alt="logo">
+        <img src="photos/purger.png" alt="logo" >
         <p>burgarita</p>
       </div>
       <ul>
-        <li>our menu</li>
-        <li>catering</li>
-        <li>about us</li>
-        <li>contact</li>
+        <li><a href="#our menu">our menu</a></li>
+        <li><a href="#catering">catering</a></li>
+        <li><a href="#About">about us</a></li>
+        <li><a href="#contact">contact</a></li>
       </ul>
       <div class="button">
         <i class="fa-solid fa-bars"></i>
@@ -40,7 +42,7 @@
   <!-- start landing -->
   <div class="landing">
     <div class="container">
-      <div class="content">
+      <div class="content"data-aos="fade-down-right">
         <p>tasty food forever</p>
         <h2>hot new items in the <span>resturant</span></h2>
         <p class="para">Lorem ipsum dolor <span>amet consectetur adipisicing elit. Culpa,</span> natus aspernatur. Velit, quo veritatis? Et eos vero dolore ad dolores qui odio, autem obcaecati eligendi praesentium ex.</p>
@@ -49,31 +51,31 @@
           <input type="submit" value="grab it">
         </div>
       </div>
-      <div class="image">
+      <div class="image"data-aos="fade-up-left">
         <img src="photos/landing.png" alt="landing">
       </div>
     </div>
   </div>
   <!-- End landing -->
   <!-- start sction -->
-  <div class="section">
+  <div class="section" id="our menu">
     <div class="container">
-      <div class="text">
+      <div class="text"data-aos="flip-right">
         <h3>try on the there new <span>steak platter</span></h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod eos velit magnam sit qui, architecto, illo at non optio dignissimos adipisci consequuntur. Non maiores, a corporis similique dolorem voluptatibus mollitia.</p>
       </div>
       <div class="menue">
-        <div class="dish">
+        <div class="dish" data-aos="zoom-in-right">
           <img src="photos/dish-1.png" alt="photo">
           <p>grilled meat in plate</p>
           <p>$32.50</p>
         </div>
-        <div class="dish">
+        <div class="dish" data-aos="zoom-in-down">
           <img src="photos/dish-4.png" alt="photo">
           <p>beaf steak with saulted veg</p>
           <p>$40.00</p>
         </div>
-        <div class="dish">
+        <div class="dish" data-aos="zoom-in-left">
           <img src="photos/dish-3.png" alt="photo">
           <p>barbecue grill beaf steak</p>
           <p>$40.00</p>
@@ -85,42 +87,52 @@
   <!-- start title -->
   <div class="title">
     <div class="container">
-      <div class="text">
+      <div class="text" data-aos="fade-right"
+      data-aos-offset="300"
+      data-aos-easing="ease-in-sine">
         <h3> Explore our <span>exclusive</span> dishes</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit dicta magni nisi sunt in laboriosam ipsa quisquam mollitia accusamus, quam deleniti delectus impedit, voluptates non quae aperiam odit voluptas distinctio.</p>
         <a href="#">More</a>
       </div>
-      <div class="image">
+      <div class="image"data-aos="fade-left"data-aos-offset="400">
         <img src="photos/menue.png" alt="photo">
       </div>
     </div>
   </div>
   <!-- end title -->
   <!-- start kinds -->
-  <div class="kinds">
+  <div class="kinds" id="catering">
     <div class="container">
-      <div class="kind">
+      <div class="kind" data-aos="flip-left"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="2000">
         <img src="photos/kind-1.png" alt="">
         <div class="text">
           <h3>salads</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, a recusandae! Id, dicta.</p>
         </div>
       </div>
-      <div class="kind">
+      <div class="kind" data-aos="flip-left"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="2000">
         <img src="photos/kind-2.png" alt="">
         <div class="text">
           <h3>sea food</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, a recusandae! Id, dicta.</p>
         </div>
       </div>
-      <div class="kind">
+      <div class="kind" data-aos="flip-left"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="2000">
         <img src="photos/landing.png" alt="">
         <div class="text">
           <h3>main dish</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, a recusandae! Id, dicta.</p>
         </div>
       </div>
-      <div class="kind">
+      <div class="kind" data-aos="flip-left"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="2000">
         <img src="photos/kind-4.png" alt="">
         <div class="text">
           <h3>appetizers</h3>
@@ -131,13 +143,18 @@
   </div>
   <!-- end kinds -->
   <!-- statrt portofolio -->
-  <div class="portofolio">
+  <div class="portofolio" id="About">
     <div class="container">
       <h3>secret<span> steak recipe</span><br>from our shef</h3>
       <p class="head">lorem ipsum is simply <Span>dummy text of the printing</Span> and typeseting</p>
-      <div class="port">
+      <div class="port"data-aos="fade-right"
+      data-aos-offset="300"
+      data-aos-easing="ease-in-sine">
         <img src="photos/purger.png" alt="photo">
-        <div class="text">
+        <div class="text"data-aos="fade-left"
+        data-aos-anchor="#example-anchor"
+        data-aos-offset="500"
+        data-aos-duration="500">
           <p>season the steak with salt.heat the oil in a trying pan large enough to fit </p>
           <p class="article">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro expedita consequatur nostrum laborum unde dolor adipisci beatae placeat vitae odit? Quasi, non voluptatem ex animi velit cumque eum quaerat cupiditate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quam nisi sequi iure ipsam molestiae numquam. Veritatis quam perspiciatis iure, soluta, illo, repellendus laborum tempora vero dolorum ipsum natus hic! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit veniam repudiandae laboriosam quas assumenda cumque expedita alias est amet exercitationem rerum, cum sed porro repellat. Laboriosam dolores quasi error fuga.</p>
           <p>trnsfer the steak to awarm plate and cover .</p>
@@ -148,9 +165,9 @@
   </div>
   <!-- end portofolio -->
   <!-- start booking -->
-  <div class="booking">
+  <div class="booking" id="contact">
     <div class="container">
-      <div class="text">
+      <div class="text"data-aos="zoom-in-down">
         <h3>book a <span>table</table></span></h3>
         <p> you are welcome at our sturant</p>
         <div class="inputs">
@@ -159,7 +176,7 @@
           <input type="text" placeholder="Number Booking">
         </div>
       </div>
-      <div class="image">
+      <div class="image"data-aos="zoom-in-down">
         <img src="photos/booking.png" alt="photo">
       </div>
     </div>
@@ -173,10 +190,10 @@
         <p>egypt,dakahlia,mansoura </p>
       </div>
       <ul>
-        <li>our menue</li>
-        <li>creating</li>
-        <li>about us</li>
-        <li>contact</li>
+        <li><a href="#our menu">our menu</a></li>
+        <li><a href="#catering">catering</a></li>
+        <li><a href="#About">about us</a></li>
+        <li><a href="#contact">contact</a></li>
       </ul>
       <div class="icons">
         <div class="links">
@@ -191,5 +208,9 @@
     </div>
   </div>
   <!-- end footer -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
