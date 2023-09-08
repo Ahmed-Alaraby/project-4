@@ -510,8 +510,13 @@ body::before{
     text-decoration: none;
 }
 @media (max-width:767px) {
-    .footer .container ul li{
-        margin-left: 20px;
+    .footer .container ul{
+        flex-direction: column;
+    }
+    .footer .container ul li a{
+        margin-left: 0;
+        display: block;
+        padding: 10px;
     }
 }
 .footer .container .icons .links a i{
@@ -528,26 +533,6 @@ body::before{
     margin-left: 25px;
 }
 /* end footer */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @keyframes  rotate {
     100%{
         transform: rotate(1turn);
